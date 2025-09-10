@@ -4,7 +4,7 @@ import json
 appts = []
 records = []
 def generate_campaign_csv():
-    result = 'Name,WhatsApp,Phone,Address'
+    result = 'Name,WhatsApp,Phone,Address,Tags'
     try:
         with open('C:\\Users\\Dell\\Downloads\\IE-Wave\\Santosha\\Ecity-IE-ALL.json', 'r') as file:
             data = json.load(file)
@@ -26,15 +26,14 @@ def generate_campaign_csv():
                     street2 = record.get("street2") if record.get("street2") else ""
                     address = remove_after_phrase((street + street2).replace('\r\n', ' ').replace('\n', ' '))
                     if appt[0].lower() in address.lower():
-                        whatsappNumber = record.get("whatsapp_country_code") + '-' if record.get("whatsapp_country_code") else ""
-                        whatsappNumber += record.get("whatsapp_number") if record.get("whatsapp_number") else ""
+                        
                         if len(appt) > 1 and len(appt[1]) >= 1:
                             for appName in appt[1]:
                                 if appName.lower() in address.lower():
-                                    result += '\n' + record['name'] + ',' + whatsappNumber + ',' + record['phone'] + ',' + address.replace(',', ' ')
+                                    result += '\n' + record['name'] + ',' + get_whatsapp_number(record) + ',' + record['phone'] + ',' + address.replace(',', ' ') + ',' + str(len(record['pgm_tag_ids']))
                                     # print(f"Match found: {address}")
                         else:
-                            result += '\n' + record['name'] + ',' + whatsappNumber + ',' + record['phone'] + ',' + address.replace(',', ' ')
+                            result += '\n' + record['name'] + ',' + get_whatsapp_number(record) + ',' + record['phone'] + ',' + address.replace(',', ' ') + ',' + str(len(record['pgm_tag_ids']))
                             # print(f"Match found outside: {address}")
         print(result)
     except FileNotFoundError:
@@ -44,8 +43,10 @@ def generate_campaign_csv():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-# print(appts[39][1])
-# print(records[0])
+def get_whatsapp_number(record):
+    whatsappNumber = record.get("whatsapp_country_code") + '-' if record.get("whatsapp_country_code") else ""
+    whatsappNumber += record.get("whatsapp_number") if record.get("whatsapp_number") else ""
+    return whatsappNumber
 
 def remove_after_phrase(address, phrases = ['near ', 'opp ', 'opposite ']):
     index = -1
