@@ -25,17 +25,20 @@ def generate_campaign_csv():
                     street = record.get("street") if record.get("street") else ""
                     street2 = record.get("street2") if record.get("street2") else ""
                     address = remove_after_phrase((street + street2).replace('\r\n', ' ').replace('\n', ' '))
+                    # print(address)
                     if appt[0].lower() in address.lower():
                         
                         if len(appt) > 1 and len(appt[1]) >= 1:
                             for appName in appt[1]:
-                                if appName.lower() in address.lower():
+                                if appName.lower() in address.lower() and record['phone']:
                                     result += '\n' + record['name'] + ',' + get_whatsapp_number(record) + ',' + record['phone'] + ',' + address.replace(',', ' ') + ',' + str(len(record['pgm_tag_ids']))
                                     # print(f"Match found: {address}")
                         else:
                             result += '\n' + record['name'] + ',' + get_whatsapp_number(record) + ',' + record['phone'] + ',' + address.replace(',', ' ') + ',' + str(len(record['pgm_tag_ids']))
                             # print(f"Match found outside: {address}")
-        print(result)
+        # print(result)
+        with open('result.csv', 'w') as file:
+            file.write(result)
     except FileNotFoundError:
         print("Error: The file was not found.")
     except json.JSONDecodeError:
