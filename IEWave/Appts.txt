@@ -10,6 +10,8 @@ Godrej, Nurture
 Godrej, Ecity/E-city
 Purva, Westend
 Purva, Skywood/Skywoods/PURVASKYWOOD
+Purva, Skydale
+Prestige, Casabella
 Prestige, sunrise park
 Prestige, song of south/song of the south
 Prestige, Ferns
@@ -17,12 +19,13 @@ DLF, WestEnd/West End
 DLF, Newtown/New town
 Ittina, Mahaveer/Mahaveera
 Ittina, Neela Ap
+Ittina, Soupernika
 SJR, Blue waters/Bluewaters
-SJR, Parkway Homes
-SJR, Equinox
 SJR, Parkway
+SJR, Equinox
 SJR, FIESTA
 SJR, Hamilton
+Fiesta Home, SJR
 Smondoville
 Smondo, 2/Smondo2
 Smondo, 3
@@ -30,11 +33,22 @@ Reliaable, Lavendula
 Reliaable, signature
 Reliaable, Dollars
 Mahaveer, Ranches
+Mahaveer, Orchids/Orchid
+Mahaveer, Turquoise
+Mahaveer, marvel
 Mahendra, Aarna
+Mahendra, Elena
 GM, Infinite
 Ajmera, Infinity
+Ajmera, Stone Park
 Salarpuria, Cadenza
+Salarpuria, Symphony
+Tirumala, Symphony
+Tirumala, Dwellings
+Tirumala, Vintage
+Tirumala, Sarovar
 Sobha, Silicon Oasis
+Sobha, cinamon and saffron
 The Green Terraces
 Southern Springs
 Ganga Vertica
@@ -43,3 +57,90 @@ Kolte Patil
 Laa Moonstone
 Vedant Vayun
 Sapthagiri Ratna
+Vijaya Springwoods
+Legend Ornate
+Millennia Lakeview Layout
+Bluejay Aster
+SK Aster
+Abhee Prakruthi
+Vakil Daffodils
+Sanjana Supreme
+MJ Lifestyle
+Vascon Fortuna
+Pionier Lifestyle
+Pionier Lakedew
+Sipani, Royal
+Sipani, Bliss
+Prabhavathi
+Concorde, Manhattans/Manhattan
+Concorde, Sylvan
+Concorde, Silicon Valley
+Concorde, Midway
+Concord, Cupertino/Cuppertino
+Cocorde, wind rush
+Vrr Nest
+Hamilton Homes
+GK Jewel City
+Sirimalle Serenity
+Elite Greenwood
+Janajeeva greenwood
+DS max sigma
+SILVERWOOD, DS-MAX/DS Max
+Emmanuel Heights
+Emmanuel Heights
+Emmanuel woods
+Emmanuel Vista
+MJR, Platina
+MJR, Hydra
+MJR, Hercules
+Aratt Firenza
+Aratt Vivera
+Aratt Felicita
+Aratt Royal Citadel
+Aratt Royal Citadel
+Aratt Milano
+Aratt Amora
+ARATT Lake View
+Bren Palms
+Bren Trillium
+BREN WOODS
+Windsor Troika
+PSR Krish Kamal
+Countryside Raindance
+Prakruthi Solitaire
+Brigade Gardenia
+Brigade lakeview
+HSR Trinity
+GRC Subhiksha
+SLV sankalpa
+SLV Shruthi
+GR Sankalpa
+GR shree nivas
+Himagiri residenc
+Vandana Marvel
+Purnima Elite
+Shakti Sunshine
+Sai Poorna Luxuria
+Hiranandani, Club Meadows
+Hiranandani, Lake Verandahs
+Hiranandani, Queensgate
+Hiranandani, Hillcrest/Hill crest
+Estella Maple Square
+Kristal Topaz Apartment
+Manar Manha
+Purvi Lotus
+Cloud 9
+Gouthami Meadows
+Gouthami Comforts
+ND Passion
+Navami Funique
+Paramount Sumadhura
+Paramount Raghavendra
+Shravanthi Paramount
+Shravanthi Prosper
+SK Daisy
+Tirumala Sunidhi
+Blue malibu
+Malibu Enclave
+Saibya Senary
+Saibya Sterling
